@@ -1,0 +1,255 @@
+body {
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+}
+
+.hero {
+    background-image: url("../images/hero.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    background-size: cover;
+    width: 100vw;
+
+}
+
+.hero-content {
+    color: #272727;
+    padding-top: 100px;
+
+}
+
+.hero-content img {
+    width: 5em;
+}
+
+.hero-content h1 {
+    padding-top: 30px;
+}
+
+.chevron {
+    display: block;
+    width: 30px;
+    top: 70%;
+    left: 90%;
+    margin-top: 100px;
+    animation: pulse 2s infinite;
+    animation-timing-function: ease-in-out;
+    filter: invert(62%) sepia(65%) saturate(3453%) hue-rotate(46deg) brightness(80%) contrast(132%);
+    position: fixed;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(0);
+    }
+
+    50% {
+        transform: translate(0, 50px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* main */
+
+main {
+    text-align: center;
+    background-color: transparent;
+}
+
+.choice {
+    margin-bottom: 100px;
+}
+
+.choose {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+
+.type-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+.card {
+    width: 400px;
+    background-color: #272727;
+    margin: 50px 0;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #fff;
+}
+
+.card p {
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    color: #fff;
+    font-weight: 100;
+}
+
+main button {
+    background-color: #568f47;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 20px 0;
+
+}
+
+main button:hover {
+    background-color: rgba(86, 143, 71, 0.7);
+
+}
+
+button img {
+    width: 15px;
+    margin-left: 50px;
+
+}
+
+/* slides */
+.process-container {
+    display: block;
+    justify-content: center;
+    width: 60vw;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 50px;
+    color: #fff;
+
+}
+
+.process-container button {
+    background-color: #568f47;
+    margin: 30px 30px;
+}
+
+.logo-wht {
+    width: 5em;
+}
+
+.process-buttons {
+    margin-top: 15px;
+}
+
+label {
+    padding: 20px 0;
+
+}
+
+#yourChoice {
+    color: #568f47;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+.details {
+    padding-top: 50px;
+}
+
+.process-container input {
+    width: 280px;
+}
+
+
+/* booking suumary slide */
+.summary-contents {
+    display: flex;
+    justify-content: space-around;
+}
+
+.summary-image {
+    width: 300px;
+    height: 200px;
+}
+
+.sum-text {
+    width: 300px;
+
+}
+
+.sum-text p {
+    line-height: 30px;
+}
+
+/* Enter guest details */
+
+.bkform label {
+    display: block;
+}
+
+.bkform input {
+    display: block;
+    width: 70%;
+
+}
+
+label.error {
+    color: #fd2b27;
+
+}
+
+.bkform request {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.input textarea {
+    display: block;
+    width: 85%;
+
+}
+
+
+.submit {
+    background-color: #568f47;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 20px 0;
+    width: auto;
+    text-transform: uppercase;
+
+}
+
+
+.bkform {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: left;
+    row-gap: 30px;
+    margin-bottom: 30px;
+
+}
+
+.bkform>div {
+    text-align: left;
+}
+
+.input {
+    text-align: left;
+}
+
+.confirm {
+    display: none;
+}
